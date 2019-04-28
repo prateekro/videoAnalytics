@@ -1,0 +1,8 @@
+.idea
+development/
+__pycache__/
+VideoAnalyticsEngine-c194ee79cbef.json
+videos/
+image_data_set/
+*.zip
+detecting-blur/
