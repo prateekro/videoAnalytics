@@ -1,11 +1,12 @@
 import extractimagefromvideo as extr
 import imageLabelDetect as detect
-import detect_blur as isblur
+import detectBlurForFile as isblur
 
-filenameInput = 'bird.mp4'
+filenameInput = 'videos/bird.mp4'
 cutAtTimeInSecond = 3000
 filenameOutput = "test.jpg"
 output = extr.extractAt(cutAtTimeInSecond, filenameInput, filenameOutput)
-# isblur.detect_blur()
-print(detect.findTags(output))
+isblur.detect_blur(output)
+# print(detect.findTags(output))
+print(detect.findTags(isblur.detect_blur(output)[1]))
 

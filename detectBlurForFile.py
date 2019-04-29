@@ -66,5 +66,5 @@ def detect_blur(imagesFolder, threshold = 100.0):
 	return notBlurList, imagesFolder
 
 # print (detect_blur(os.path.join(os.path.dirname(__file__)+'/image_data_set/dogimages/image_010.png')))
-# print (detect_blur(os.path.join(os.path.dirname(__file__)+'/image_data_set/dogimages/')))
+print (detect_blur(os.path.join(os.path.dirname(__file__)+'/image_data_set/dogimages/')))
 # print(os.path.join(os.path.dirname(__file__),'image_data_set/dogimages'))  #/image_010.png

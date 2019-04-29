@@ -58,10 +58,10 @@ def detect_blur(imagesFolder, threshold = 100.0):
 
 
 		# write text on the image
-		# cv2.putText(image, "{}: {:.2f}".format(text, fm), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 3)
+		cv2.putText(image, "{}: {:.2f}".format(text, fm), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 3)
 		# if text == "Blurry":
 		# show the image
-		# 	cv2.imshow("Image", image) #Show image in  new window
+			# cv2.imshow("Image", image) #Show image in  new window
 
 		sys.stdout.write('\r') # Reset the seek to write to zero to edit previous written
 		sys.stdout.write("Correct: "+ str(countCorrectImages) + "\tBlur: "+ str(countBlurImages) +"\tCompleted processing: " + str(countCorrectImages+countBlurImages))

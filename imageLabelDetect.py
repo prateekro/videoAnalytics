@@ -33,4 +33,4 @@ def findTags(forFileName = forFileName):
         parsedLabels[label.description] = label.score
         # print(label.description)
     return parsedLabels
-print(findTags())
+# print(findTags())
